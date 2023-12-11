@@ -5,7 +5,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-
 String uploadPath = request.getSession().getServletContext().getRealPath("/upload");
 int size = 10 * 1024 * 1024;
 MultipartRequest multi = new MultipartRequest(request, uploadPath, size, "UTF-8", new DefaultFileRenamePolicy());
@@ -21,11 +20,11 @@ origfilename1 = multi.getOriginalFileName(file1);
 System.out.println(filename1);
 System.out.println(origfilename1);
 Enumeration e = multi.getParameterNames();
-while(e.hasMoreElements()){
-	System.out.println((String)e.nextElement());
+while (e.hasMoreElements()) {
+	System.out.println((String) e.nextElement());
 }
-while(files.hasMoreElements()){
-	System.out.println((String)files.nextElement());
+while (files.hasMoreElements()) {
+	System.out.println((String) files.nextElement());
 }
 
 //글내용 
