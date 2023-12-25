@@ -11,7 +11,7 @@ String origfilename2 = request.getParameter("origfilename2");
 <html>
 <head>
 <title>파일 업로드 확인 및 다운로드</title>
-</head>
+</head> 
 <body>
 	올린 사람 :
 	<%=name%><br> 제목 :
